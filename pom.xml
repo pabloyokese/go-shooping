@@ -14,20 +14,37 @@
 
 	<dependencies>
 	<dependency>
-		<groupId>javax.servlet</groupId>
-		<artifactId>javax.servlet-api</artifactId>
-		<version>3.1.0</version>
-		<scope>provided</scope>
+		<groupId>org.hsqldb</groupId>
+		<artifactId>hsqldb</artifactId>
+		<version>2.3.3</version>
 	</dependency>
-	
 	<dependency>
-		<groupId>javax.servlet.jsp</groupId>
-		<artifactId>javax.servlet.jsp-api</artifactId>
-		<version>2.3.1</version>
-		<scope>provided</scope>
-	</dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.9.2.RELEASE</version>
+		</dependency>
 
-	<dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.3.4.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-core</artifactId>
 			<version>${apache.tiles}</version>
@@ -37,11 +54,11 @@
 			<artifactId>tiles-jsp</artifactId>
 			<version>${apache.tiles}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.5.8</version>
+			<version>1.7.6</version>
 		</dependency>
 
 		<!-- Core utilities used by other modules. Define this if you use Spring 
